@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	
+    <Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="MineableSteel"]/graphicData/color</xpath>
+		<value>
+			<color>(213,94,0)</color>
+		</value>
+	</Operation>
+	
+    <Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="MineableSilver"]/graphicData/color</xpath>
+		<value>
+			<color>(86,180,233)</color>
+		</value>
+	</Operation>
+	
+    <Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="MineableGold"]/graphicData/color</xpath>
+		<value>
+			<color>(230,159,0)</color>
+		</value>
+	</Operation>
+	
+    <Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="MineableUranium"]/graphicData/color</xpath>
+		<value>
+			<color>(204,121,167)</color>
+		</value>
+	</Operation>
+	
+    <Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="MineablePlasteel"]/graphicData/color</xpath>
+		<value>
+			<color>(0,114,178)</color>
+		</value>
+	</Operation>
+	
+    <Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="MineableJade"]/graphicData/color</xpath>
+		<value>
+			<color>(0,158,115)</color>
+		</value>
+	</Operation>
+	
+    <Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="MineableComponentsIndustrial"]/graphicData</xpath>
+		<value>
+			<color>(240,228,66)</color>
+			<colorTwo>(155,133,107)</colorTwo>
+		</value>
+	</Operation>
+	
+    <Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="MineableComponentsIndustrial"]/graphicData/texPath</xpath>
+		<value>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+		</value>
+	</Operation>
+	
+</Patch>
