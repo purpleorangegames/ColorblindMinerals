@@ -44,19 +44,42 @@
 		</value>
 	</Operation>
 	
-    <Operation Class="PatchOperationAdd">
-		<xpath>*/ThingDef[defName="MineableComponentsIndustrial"]/graphicData</xpath>
-		<value>
+    <Operation Class="PatchOperationSequence">
+     <success>Always</success>
+     <operations>
+       <li Class="PatchOperationReplace">
+         <xpath>*/ThingDef[defName="MineableComponentsIndustrial"]/graphicData/texPath</xpath>
+		 <value>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+		 </value>
+       </li>
+       <li Class="PatchOperationAdd">
+         <xpath>*/ThingDef[defName="MineableComponentsIndustrial"]/graphicData</xpath>
+		 <value>
 			<color>(240,228,66)</color>
 			<colorTwo>(155,133,107)</colorTwo>
-		</value>
-	</Operation>
-	
-    <Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="MineableComponentsIndustrial"]/graphicData/texPath</xpath>
-		<value>
+		 </value>
+       </li>
+     </operations>
+   </Operation>
+   
+   <Operation Class="PatchOperationSequence">
+     <success>Always</success>
+     <operations>
+       <li Class="PatchOperationReplace">
+         <xpath>*/ThingDef[defName="MineableComponents"]/graphicData/texPath</xpath>
+		 <value>
 			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
-		</value>
-	</Operation>
+		 </value>
+       </li>
+       <li Class="PatchOperationAdd">
+         <xpath>*/ThingDef[defName="MineableComponents"]/graphicData</xpath>
+		 <value>
+			<color>(240,228,66)</color>
+			<colorTwo>(155,133,107)</colorTwo>
+		 </value>
+       </li>
+     </operations>
+   </Operation>
 	
 </Patch>
